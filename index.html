@@ -28,7 +28,9 @@
                 The RGB values of each pixel are altered
                 such that their least siginificant bit matches your text's binary value. But before that is even done, 
                 your text is encrypted with a password and then compressed so that even if someone knows you're hiding data in the image, they 
-                can't extract it. Unfortunately since this website uses browser based tools, Apple's .HEIC image format is not supported.
+                can't extract it. A SHA-256 hash of the image is also provided for verification, as sometimes messaging apps compress the image,
+                rendering the hidden data unreadable. 
+                Unfortunately since this website uses browser based tools, Apple's .HEIC image format is not supported.
             </p>
             <a class="lead text-white m-4 p-4" href="./encode/encode.html">Want to try it out? Click me to encode an image.</a>
             <br><br>
