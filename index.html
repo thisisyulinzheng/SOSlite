@@ -1,11 +1,8 @@
 <html>
-    <script src="../jsaes.js"></script>
-    <script src="../lz-string.js"></script>
-    <script src="./decode.js"></script>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
-    <body onload="init()" class="bg-dark">
+    <body class="bg-dark">
         <!-- The nav section was taken from the Bootstrap docs -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -31,7 +28,7 @@
                 The RGB values of each pixel are altered
                 such that their least siginificant bit matches your text's binary value. But before that is even done, 
                 your text is encrypted with a password and then compressed so that even if someone knows you're hiding data in the image, they 
-                can't extract it.
+                can't extract it. Unfortunately since this website uses browser based tools, Apple's .HEIC image format is not supported.
             </p>
             <a class="lead text-white m-4 p-4" href="./encode/encode.html">Want to try it out? Click me to encode an image.</a>
             <br><br>
