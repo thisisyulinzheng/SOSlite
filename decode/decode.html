@@ -1,4 +1,6 @@
 <html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
     <script src="../jsaes.js"></script>
     <script src="../lz-string.js"></script>
     <script src="./decode.js"></script>
@@ -39,6 +41,9 @@
         </div>
         <div class="container">
             <p id="decryptedText" class="bg-white"></p>
+        </div>
+        <div class="container">
+            <p id="imgHash" class="bg-white"></p>
         </div>
         <div class="container" style="margin-top:20%">
             <hr class="featurette-divider" style="color:white">

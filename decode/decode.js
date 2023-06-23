@@ -20,7 +20,8 @@ function handleFileSelect(event) {
         // creates a image
         let img = document.createElement('img');
         img.src = reader.result;
-
+        document.getElementById("imgHash").innerHTML = "For verification, the SHA-256 hash of your image is: " + CryptoJS.SHA256(reader.result);
+        document.getElementById("imgHash").classList.add("p-2");
         img.onload = function() {
             document.getElementById("startButton").inputResult = img;
             document.getElementById("startButton").addEventListener('click', startDecodeSequence, false);

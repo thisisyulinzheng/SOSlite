@@ -87,10 +87,12 @@ function embedAndDownload(imgArray, width, height, pkey, ptext) {
             ctx.fillRect(j, i, 1, 1); 
         }
     }
-
     let dataURL = canvas.toDataURL("image/png");
+    document.getElementById("imgHash").innerHTML = "For verification, the SHA-256 hash of the output image is: " + CryptoJS.SHA256(dataURL);
+    document.getElementById("imgHash").classList.add("p-2");
+
     let dlElement = document.createElement('a');
-    dlElement.href = dataURL
+    dlElement.href = dataURL;
     dlElement.download = 'output.png';
     dlElement.click();
 }
