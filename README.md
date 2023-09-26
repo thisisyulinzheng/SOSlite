@@ -6,5 +6,3 @@ This website is a locally-run steganography tool. It allows you to hide text int
                 rendering the hidden data unreadable.
 
 This website is currently being hosted at: https://thisisyulinzheng.github.io/SOSlite/
-
-The full version is under construction. It will allow you to store your encoded images on a server and send to your friends discretely. Please check back if you're interested.
